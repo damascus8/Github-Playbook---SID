@@ -1,0 +1,35 @@
+name: Improvement or new guidance
+description: Suggest a new checklist, template, or explanation.
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Who is the user and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed guidance or template
+      description: Share an outline or example, if you have one.
+    validations:
+      required: true
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Most relevant project type
+      options:
+        - General / all projects
+        - API or backend service
+        - Web application
+        - Mobile application
+        - CLI tool
+        - Library or SDK
+        - Data / ML
+        - Infrastructure / IaC
+        - Not sure
+    validations:
+      required: true

@@ -1,0 +1,30 @@
+name: Bug or incorrect guidance
+description: Report a broken example, incorrect instruction, or broken link.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve the Playbook. Do not include credentials or private repository data."
+  - type: input
+    id: location
+    attributes:
+      label: File or section
+      description: Link to the page or name the file.
+      placeholder: docs/03-security/security-baseline.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Explain what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction
+      description: Optional. Include links to authoritative documentation where relevant.
+    validations:
+      required: false

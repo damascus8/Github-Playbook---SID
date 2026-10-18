@@ -1,0 +1,12 @@
+# Copy to .github/CODEOWNERS, CODEOWNERS, or docs/CODEOWNERS.
+# Replace @your-team or @your-username with real GitHub users/teams.
+# Patterns are examples. Validate paths and team access before relying on this file.
+
+# Default owner for everything
+* @your-username
+
+# Example path owners
+/docs/ @your-username
+/.github/ @your-username
+/src/security/ @security-team
+/infra/ @platform-team

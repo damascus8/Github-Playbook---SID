@@ -1,0 +1,14 @@
+# This Playbook repository contains Markdown and GitHub Actions only.
+# Add another ecosystem only if this repository starts using that package manager.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      github-actions-minor-patch:
+        update-types:
+          - minor
+          - patch

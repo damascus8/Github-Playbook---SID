@@ -1,0 +1,27 @@
+# Starter Java/Maven CI. Copy to .github/workflows/ci.yml and adapt versions/commands.
+# Confirm the Java version and Maven lifecycle for the actual project before making this check required.
+name: Java CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Build and test
+        run: mvn --batch-mode --no-transfer-progress verify

@@ -1,0 +1,32 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Build output and logs (add language-specific entries as needed)
+dist/
+build/
+out/
+coverage/
+*.log
+
+# Dependencies and caches (keep only entries relevant to your stack)
+node_modules/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.gradle/
+target/

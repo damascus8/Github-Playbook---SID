@@ -1,0 +1,9 @@
+# Use this file for a repository whose only dependency updates are GitHub Actions.
+# Save as .github/dependabot.yml.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
